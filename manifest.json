@@ -1,11 +1,14 @@
 {
-    "manifest_version": 2,
-    "version": "0.0.1",
+    "manifest_version": 3,
     "name": "Bootcamp Extension",
-    "description": "Extensão Bootcamp ||",
-    "author" : "Rodrigo Freitas Ferreira",
-    "browser_action": {
+    "version": "0.0.1",
+    "description": "Extensão Bootcamp || Rodrigo Freitas Ferreira",
+    "author": "Rodrigo Freitas Ferreira",
+
+    "action": {
         "default_title": "Bootcamp Extension",
-        "default_popup": "index.hmtl"
-    }
+        "default_popup": "index.html"
+    },
+
+    "permissions": []
 }
