@@ -10,5 +10,7 @@
         "default_popup": "index.html"
     },
 
-    "permissions": []
+    "permissions": [
+        "storage"
+    ]
 }
