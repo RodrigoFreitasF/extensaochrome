@@ -16,7 +16,7 @@ Uma extensão para o chrome para escolher uma cor e pegar o código hexadecimal 
 ### Instalação Local (Desenvolvimento)
 
 1. **Baixe os arquivos** da extensão:
-   1.1 - **Dê um git clone neste repositório**
+   1.1 **-** **Dê um git clone neste repositório**
    1.2 - Com os arquivos no seu pc, acesse no google Chrome o site **Chrome://extensions**
    1.3 - No site ative Developer mode e aperte em Load unpacked e copie o caminho do arquivo baixado
    1.4 - Com tudo isso realizado ele deverá aparecer e funcionar perfeitamente
