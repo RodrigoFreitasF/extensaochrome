@@ -1,8 +1,6 @@
-# extensaochrome
-Bootcamp ||
-# 🎨 Bootcamp Extension
+# 🎨 Extensão Bootcamp
 
-Uma extensão para Chrome elegante e funcional que permite personalizar a cor de fundo da interface, com recursos adicionais de copiar cores para área de transferência.
+Uma extensão para o chrome para escolher uma cor e pegar o código hexadecimal com um design suave, responsivo e simples
 
 ## ✨ Funcionalidades
 
