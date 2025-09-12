@@ -3,8 +3,8 @@ body {
     padding: 15px;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    color: #333; /* Cor padrão do texto */
-    transition: all 0.3s ease; /* Transição suave para mudanças de cor */
+    color: #333;
+    transition: all 0.3s ease;
 }
 
 .container {
@@ -12,15 +12,15 @@ body {
 }
 
 h3 {
-    color: inherit; /* Herda a cor do body */
+    color: inherit;
     margin-top: 0;
-    border-bottom: 2px solid currentColor; /* Usa a cor do texto */
+    border-bottom: 2px solid currentColor;
     padding-bottom: 10px;
     font-weight: bold;
 }
 
 p {
-    color: inherit; /* Herda a cor do body */
+    color: inherit;
     margin: 8px 0;
 }
 

@@ -1,7 +1,6 @@
-// Quando o documento estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Carregar cor salva se existir
+    // Carrega cor salva se existir
     chrome.storage.sync.get(['backgroundColor', 'textColor'], function(result) {
         if (result.backgroundColor) {
             document.body.style.backgroundColor = result.backgroundColor;
@@ -15,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Configurar o botão de mudar cor
+    // Configuração do botão de mudar cor
     document.getElementById('mudarCorBtn').addEventListener('click', MudarCorFundo);
 
-    // Configurar o botão de reset
+    // Configuração do botão de reset
     document.getElementById('resetBtn').addEventListener('click', function() {
         document.body.style.backgroundColor = '#f9f9f9';
         document.body.style.color = '#333';
@@ -35,10 +34,10 @@ function MudarCorFundo(){
     const corTexto = getContrastColor(corEscolhida);
     document.body.style.color = corTexto;
 
-    // MOSTRAR POPUP - LINHA ADICIONADA
+    // Mostrar popup
     mostrarPopup(corEscolhida);
 
-    // COPIAR PARA ÁREA DE TRANSFERÊNCIA - LINHA NOVA
+    // Copiar para area de transferência
     copiarParaAreaTransferencia(corEscolhida);
 
     chrome.storage.sync.set({
@@ -62,7 +61,7 @@ function getContrastColor(hexColor) {
     }
 }
 
-// FUNÇÃO NOVA - POPUP SIMPLES
+// Popup
 function mostrarPopup(cor) {
     const popup = document.createElement('div');
     popup.style.position = 'fixed';
