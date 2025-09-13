@@ -24,4 +24,4 @@ Uma extensão para o chrome para escolher uma cor e pegar o código hexadecimal 
 
 ### Tecnologias utilizadas 
 
-![Bootcamp Extension](https://img.shields.io/badge/Bootcamp_Extension-FF6B6B?style=for-the-badge&logo=google-chrome&logoColor=white)
+<p align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"> <img src="https://img.shields.io/badge/Chrome_Extension-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Chrome Extension"> </p>
