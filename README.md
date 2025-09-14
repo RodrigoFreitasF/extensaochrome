@@ -16,7 +16,7 @@ Uma extensão para o chrome para escolher uma cor e pegar o código hexadecimal 
 ### Instalação Local (Desenvolvimento)
 
 1. - **Baixe os arquivos** da extensão:
-   - ```bash
+   ```bash
 git clone https://github.com/seu-usuario/bootcamp-extension.git
 2. - **Dê um git clone neste repositório**
 3. - Com os arquivos no seu pc, acesse no google Chrome o site **Chrome://extensions**
