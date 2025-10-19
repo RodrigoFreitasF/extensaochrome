@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull request:
+    branches: [main]
+  workflow dispatch:
+
+jobs:
+  test-build: 
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v4
+      
+      -uses: actions/setup-node@v4
+       with: 
+        node-version: '20'
+        cache: 'npm'
+      -name: instalar dependências
+      -run: npm ci
+
+      -name: instalar Playwright (chromium + deps)
+      run: npx playwright install --with-deps chomium
+
+      -name: build extensão
+      run: npm run build
+
+      -name: Teste E2E
+      run: xvfb- run -a -npm run test:e2e
+
+      -name: Publicar relatorio HTML do test
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        nome: playwright-report
+        path: playwright-reoprt
+
+      -name: Publicar pacote da extensão
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: extension-zip
+        path: dist/extension.zip
+        
+      
