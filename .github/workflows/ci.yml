@@ -15,8 +15,8 @@ jobs:
       
       - uses: actions/setup-node@v4
         with: 
-        node-version: '20'
-        cache: 'npm'
+          node-version: '20'
+          cache: 'npm'
       - name: instalar dependências
       - run: npm ci
 
@@ -33,14 +33,14 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-        nome: playwright-report
-        path: playwright-reoprt
+          nome: playwright-report
+          path: playwright-reoprt
 
       - name: Publicar pacote da extensão
         if: always()
         uses: actions/upload-artifact@v4
         with:
-        name: extension-zip
-        path: dist/extension.zip
+          name: extension-zip
+          path: dist/extension.zip
         
       
