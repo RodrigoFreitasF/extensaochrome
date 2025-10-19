@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "scripts": {
     "build": "node scripts/build-extensions.mjs",
-    "test:e2e": "playwright test --reporter=list, html",
+    "test:e2e": "playwright test --reporter=html",
     "test": "npm run build && npm run test:e2e"
   },
   "devDependencies": {
