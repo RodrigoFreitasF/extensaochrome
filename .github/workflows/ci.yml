@@ -18,19 +18,19 @@ jobs:
           node-version: '20'
           cache: 'npm'
           
-      - name: Instalar dependências
+      - name: instalar dependências
         run: npm ci
 
-      - name: Instalar Playwright (chromium + deps)
+      - name: instalar Playwright (chromium + deps)
         run: npx playwright install --with-deps chromium
 
-      - name: Build extensão
+      - name: build extensão
         run: npm run build
 
       - name: Teste E2E
         run: xvfb-run -a npm run test:e2e
 
-      - name: Publicar relatório HTML do teste
+      - name: Publicar relatorio HTML do test
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -42,4 +42,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: extension-zip
-          path: dist/extension.zip
+          path: dist/
